@@ -18,4 +18,19 @@ public class User {
         return Id;
     }
 
+    public void setName(){
+        this.name=name;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setSurname(){
+        this.surname = surname;
+    }
+
+    public String getSurname(){
+        return surname;
+    }
 }
