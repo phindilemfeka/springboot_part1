@@ -1,27 +1,33 @@
-import org.springframework.beans.factory.annotation.Autowired;
+public class FakeRepo implements FakeRepoInterface {
 
-public class FakeRepo {
-@Autowired
-    public User[] user;
+    public User[] user = new User[4]; //object array of type User
 
-    public String insert(String name, String surname){
-        for(int i=0; i<user.length; i++){
-           name = user[i].getName();
-           surname = user[i].getSurname();
-        }
-        return insert(name, surname);
+    int count =0;
+
+    @Override
+    public void insertUser(long Id, String name, String surname) {
+        User userTest = new User(Id, name, surname); //creating an object with its values to add users
+        user[count] = userTest;
+        count++;
+
+        System.out.println(user[0].getName());
     }
 
-    public long find(long Id){
+    @Override
+    public User findUserById(long Id) {
+        User user1 = new User();
         for (int i = 0; i <user.length ; i++) {
-            Id = user[i].getId();
+            if(user[i].getId() == Id){
+                user1 = user[i];
+                break;
+            }
         }
-        return Id;
+        System.out.println(user1.getName());
+     return user1;
     }
 
-    public long delete(long Id){
-        for (int i = 0; i <user.length ; i++) {
-        }
-        return Id;
+    @Override
+    public void deleteUser(long Id) {
+
     }
 }

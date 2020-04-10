@@ -4,6 +4,9 @@ public class User {
     private String name;
     private String surname;
 
+    public User(){
+    }
+
     public User(long Id, String name, String surname){
         this.Id = Id;
         this.name = name;
