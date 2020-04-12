@@ -1,3 +1,10 @@
+import com.sun.tools.javac.util.ArrayUtils;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class FakeRepo implements FakeRepoInterface {
 
     public User[] user = new User[4]; //object array of type User
@@ -8,9 +15,9 @@ public class FakeRepo implements FakeRepoInterface {
     public void insertUser(long Id, String name, String surname) {
         User userTest = new User(Id, name, surname); //creating an object with its values to add users
         user[count] = userTest;
-        count++;
+        ++count;
 
-        System.out.println(user[0].getName());
+        //System.out.println("name: " + user[0].getName());
     }
 
     @Override
@@ -22,12 +29,32 @@ public class FakeRepo implements FakeRepoInterface {
                 break;
             }
         }
-        System.out.println(user1.getName());
+        System.out.println("found: " + user1.getName());
      return user1;
     }
 
     @Override
     public void deleteUser(long Id) {
+       /* for(int i = 0; i < user.length; i++){
+            if(user[i].getId() == Id){
+                user = removeElement(user, i);
+                break;
+            }
+        }
 
+        System.out.println("Array elements after deletion-- " );
+        for(int i = 0; i < user.length; i++){
+            System.out.print(" " + user[i]);
+        }*/
     }
+
+   /* public static User[] removeElement( User[] numArray, int index ){
+        // Converting to list
+        List tempList = new ArrayList(Arrays.asList(numArray));
+        tempList.remove(index);
+        // converting back to array
+
+        return tempList.toArray(new User[0]);
+    }*/
+
 }
