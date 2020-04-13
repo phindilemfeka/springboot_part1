@@ -1,13 +1,13 @@
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class UserServiceImpl implements UserService {
    // @Autowired
-    public FakeRepo fakeRepo;
+    //public FakeRepo fakeRepo;
 
+    FakeRepo fr = new FakeRepo();
 
     @Override
-    public void addUser(String name, String surname) {
-
+    public String addUser(String name, String surname) {
+        fr.insertUser(1, "shirley", "ndou");
+        return name;
     }
 
     @Override
@@ -16,7 +16,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void getUser(long Id) {
-
+    public long getUser(long Id) {
+      fr.findUserById(1);
+        return Id;
     }
 }

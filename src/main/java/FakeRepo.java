@@ -1,12 +1,14 @@
 import com.sun.tools.javac.util.ArrayUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+//@Repository
 public class FakeRepo implements FakeRepoInterface {
-
+    //@Autowired
     public User[] user = new User[4]; //object array of type User
 
     int count =0;
@@ -17,7 +19,7 @@ public class FakeRepo implements FakeRepoInterface {
         user[count] = userTest;
         ++count;
 
-        //System.out.println("name: " + user[0].getName());
+        System.out.println("name: " + user[0].getName());
     }
 
     @Override

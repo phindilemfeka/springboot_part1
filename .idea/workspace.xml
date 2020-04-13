@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f955c66-da58-4ef9-8bd5-f65f8d178017" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/FakeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/FakeRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/FakeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FakeRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +39,7 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -36,11 +55,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.UserServiceImplTest.getUser">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SpringBootPart1.main" />
@@ -48,8 +77,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceImplTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;UserServiceImplTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceImplTest.addUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;UserServiceImplTest.addUser&quot; --stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceImplTest.getUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;UserServiceImplTest.getUser&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserServiceImplTest.getUser" />
+        <item itemvalue="Gradle.UserServiceImplTest.addUser" />
+        <item itemvalue="Gradle.UserServiceImplTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,22 +169,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="494" y="155" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1586500750822" />
-    <state width="1253" height="34" key="GridCell.Tab.0.bottom" timestamp="1586628681027">
+    <state width="1253" height="191" key="GridCell.Tab.0.bottom" timestamp="1586792424290">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="34" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1586628681027" />
-    <state width="1253" height="34" key="GridCell.Tab.0.center" timestamp="1586628681026">
+    <state width="1253" height="191" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1586792424290" />
+    <state width="1253" height="191" key="GridCell.Tab.0.center" timestamp="1586792424288">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="34" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1586628681026" />
-    <state width="1253" height="34" key="GridCell.Tab.0.left" timestamp="1586628681026">
+    <state width="1253" height="191" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1586792424288" />
+    <state width="1253" height="191" key="GridCell.Tab.0.left" timestamp="1586792424287">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="34" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1586628681026" />
-    <state width="1253" height="34" key="GridCell.Tab.0.right" timestamp="1586628681026">
+    <state width="1253" height="191" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1586792424287" />
+    <state width="1253" height="191" key="GridCell.Tab.0.right" timestamp="1586792424289">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="34" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1586628681026" />
+    <state width="1253" height="191" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1586792424289" />
     <state width="1253" height="34" key="GridCell.Tab.1.bottom" timestamp="1586628681028">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -116,6 +205,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1586500763645" />
+    <state x="166" y="190" width="442" height="412" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586788783458">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="166" y="190" width="442" height="412" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1586788783458" />
     <state x="449" y="146" width="524" height="501" key="extract.method.dialog" timestamp="1586614264316">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
