@@ -1,27 +1,37 @@
+import com.springapp.Main;
+import com.springapp.User;
+import com.springapp.UserService;
+import com.springapp.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-//@SpringBootTest[classes = UserServiceImpl.class];
+@SpringBootTest(classes = Main.class)
 class UserServiceImplTest {
 
-//    @Autowired
-//    public UserServiceImpl userService;
+    @Autowired
+   public UserService userService;
 
-    UserServiceImpl userService = new UserServiceImpl();
+   // UserServiceImpl userService = new UserServiceImpl();
+
     @Test
     void addUser() {
-        String name = userService.addUser("shirley", "ndou");
+        String name = userService.addUser(1, "shirley", "ndou");
         assertEquals("shirley", name);
     }
-  /*  @Test
+  @Test
     void removeUser() {
     }
 
     @Test
     void getUser() {
-        long id = userService.getUser(1);
-        assertEquals(0x1, id);
-    }*/
+        User user = new User();
+        user.setName("shirley");
+        user.setSurname("ndou");
+        user.setId(1);
+        assertEquals(user,  userService.getUser(1));
+
+    }
+
 }
