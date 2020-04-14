@@ -44,9 +44,7 @@ public class FakeRepo implements FakeRepoInterface {
                 System.out.println(user[i].getName()+ ": removed");
             }
         }
-        /*System.out.println(user[0].getName());
-        System.out.println(user[1].getName());
-        System.out.println(user[2].getName());*/
+
     }
 
 }

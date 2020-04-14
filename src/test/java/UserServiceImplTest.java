@@ -1,7 +1,6 @@
 import com.springapp.Main;
 import com.springapp.User;
 import com.springapp.UserService;
-import com.springapp.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,8 +11,6 @@ class UserServiceImplTest {
 
     @Autowired
    public UserService userService;
-
-   // UserServiceImpl userService = new UserServiceImpl();
 
     @Test
     void addUser() {
