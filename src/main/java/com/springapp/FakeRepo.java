@@ -1,50 +1,42 @@
 package com.springapp;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public class FakeRepo implements FakeRepoInterface {
-    public User[] user = new User[4]; //object array of type User
-    int count =0;
-    int index=0;
+   private static List<User> user = new ArrayList<>();
+   //insert the user with the id, name and surname
     @Override
-    public void insertUser(long Id, String name, String surname) {
-        User userTest = new User(Id, name, surname); //creating an object with its values to add users
-        user[count] = userTest;
-        System.out.println("name: " + user[count].getName());
-        ++count;
+    public int insertUser(long Id, String name, String surname) {
+        user.add(new User(Id, name, surname));
+        System.out.println("name: " + name);
+        return 1;
     }
 
+    //find the user by Id
     @Override
     public User findUserById(long Id) {
-        User user1 = new User();
-        for (User value : user) {
-            if (value.getId() == Id) {
-                user1 = value;
-                break;
+        for(User value : user){
+            if(value.getId() == Id){
+                System.out.println("User found: " + value.getName());
+                return value;
             }
         }
-        System.out.println("found: " + user1.getName());
-     return user1;
+        return null;
     }
 
+    //remove the user by Id from the object array
     @Override
-    public void deleteUser(long Id) {
-        ArrayList<User> arrayList = new ArrayList<>();
-        for (int i =0; i<user.length-1; i++) {
-            if (user[i].getId() == Id) {
-                index=i;
-               break;
+    public int deleteUser(long Id) {
+        for(User value : user){
+            if(value.getId() == Id){
+                user.remove(Id);
+                return 0;
             }
         }
-        for (int j=index; j<user.length-1; j++) {
-            user[j] = user[j+1];
-        }
-        for (int i = 0; i <user.length-1; i++) {
-            if(user[i] !=null) {
-                System.out.println(user[i].getName()+ ": removed");
-            }
-        }
-
+        return 1;
     }
 
 }
