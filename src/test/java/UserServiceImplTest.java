@@ -27,7 +27,7 @@ class UserServiceImplTest {
         user.setName("shirley");
         user.setSurname("ndou");
         user.setId(1);
-        assertEquals(user,  userService.getUser(1));
+        assertEquals(user.getId(),  userService.getUser(1));
 
     }
 
