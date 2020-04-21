@@ -19,6 +19,7 @@ class UserServiceImplTest {
     }
   @Test
     void removeUser() {
+        //Can't test a void function
     }
 
     @Test
