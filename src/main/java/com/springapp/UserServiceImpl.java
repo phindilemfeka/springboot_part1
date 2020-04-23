@@ -1,7 +1,9 @@
 package com.springapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceImpl implements UserService {
     FakeRepoInterface fakeRepo;
     @Autowired
@@ -11,7 +13,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public String addUser(long Id, String name, String surname) {
         fakeRepo.insertUser(1, "shirley", "ndou");
-        System.out.println(name + "entered");
+        System.out.println(name + " entered");
         return name;
     }
 
